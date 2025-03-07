@@ -1,7 +1,9 @@
 let arr = [];
 
 while (true) {
-    alert( "================== MENU ===================\n" +
+    let choice = parseInt(prompt(
+
+        "================== MENU ===================\n" +
         "1. Nhập số phần tử cần nhập và giá trị các phần tử\n" +
         "2. In ra giá trị các phần tử đang quản lý\n" +
         "3. In ra giá trị các phần tử chẵn và tính tổng\n" +
@@ -10,8 +12,9 @@ while (true) {
         "6. Nhập vào một số và thống kê trong mảng có bao nhiêu phần tử đó\n" +
         "7. Thêm một phần tử vào vị trí chỉ định\n" +
         "8. Thoát\n" +
-        "============================================\n" );
-    let choice = parseInt(prompt("Lựa chọn của bạn: "));
+        "============================================\n" +
+        "Lựa chọn của bạn: "
+    ));
 
     switch (choice) {
         case 1:
